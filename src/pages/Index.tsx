@@ -22,7 +22,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-4">
+    <div className="min-h-screen flex items-center justify-center p-4" style={{ background: "linear-gradient(135deg, hsl(155, 30%, 88%), hsl(140, 25%, 78%), hsl(165, 28%, 85%))" }}>
       <div className="w-full max-w-2xl">
         {screen === 0 && <InstructionsScreen onNext={goToPassage} />}
         {screen === 1 && <PassageScreen onNext={goToQuestions} />}
